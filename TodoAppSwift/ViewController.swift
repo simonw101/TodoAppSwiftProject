@@ -9,13 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var todoTitleTextField: UITextField!
+    
+    @IBOutlet weak var todoTextTextView: UITextView!
+    
+    @IBOutlet weak var dateTextfield: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
-        print("Test")
+        
     }
 
-
+    @IBAction func saveTodoClicked(_ sender: Any) {
+    }
 }
 
