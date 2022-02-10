@@ -14,6 +14,7 @@
 		654CF1C127B4457500DCA696 /* TodoAppSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 654CF1BF27B4457500DCA696 /* TodoAppSwift.xcdatamodeld */; };
 		654CF1C327B4457800DCA696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 654CF1C227B4457800DCA696 /* Assets.xcassets */; };
 		654CF1C627B4457800DCA696 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654CF1C427B4457800DCA696 /* LaunchScreen.storyboard */; };
+		654CF1F127B589CB00DCA696 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654CF1F027B589CB00DCA696 /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		654CF1C227B4457800DCA696 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		654CF1C527B4457800DCA696 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		654CF1C727B4457800DCA696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		654CF1F027B589CB00DCA696 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				654CF1C427B4457800DCA696 /* LaunchScreen.storyboard */,
 				654CF1C727B4457800DCA696 /* Info.plist */,
 				654CF1BF27B4457500DCA696 /* TodoAppSwift.xcdatamodeld */,
+				654CF1F027B589CB00DCA696 /* ListViewController.swift */,
 			);
 			path = TodoAppSwift;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				654CF1BB27B4457500DCA696 /* ViewController.swift in Sources */,
 				654CF1C127B4457500DCA696 /* TodoAppSwift.xcdatamodeld in Sources */,
 				654CF1B727B4457500DCA696 /* AppDelegate.swift in Sources */,
+				654CF1F127B589CB00DCA696 /* ListViewController.swift in Sources */,
 				654CF1B927B4457500DCA696 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

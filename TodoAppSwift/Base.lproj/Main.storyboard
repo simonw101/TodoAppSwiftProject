@@ -16,57 +16,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Todo title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DCJ-dO-2qV">
-                                <rect key="frame" x="20" y="108" width="374" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Todo title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DCJ-dO-2qV">
+                                <rect key="frame" x="20" y="88" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZDF-Cp-39e">
-                                <rect key="frame" x="20" y="182" width="374" height="556"/>
+                                <rect key="frame" x="20" y="142" width="374" height="556"/>
                                 <color key="backgroundColor" systemColor="tintColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ui-5B-Cxk">
-                                <rect key="frame" x="20" y="832" width="374" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T68-2n-870">
+                                <rect key="frame" x="20" y="729" width="374" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="8ci-O8-Lk2"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save Todo">
                                     <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="30"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="saveTodoClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="08f-HH-Biy"/>
+                                    <action selector="saveTodoButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gSw-1Q-9IY"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pick date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GMw-u1-E4u">
-                                <rect key="frame" x="20" y="778" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="5Ui-5B-Cxk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="20" id="1zo-TZ-6x4"/>
-                            <constraint firstItem="5Ui-5B-Cxk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4xV-Dm-rQg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GMw-u1-E4u" secondAttribute="trailing" constant="20" id="7gm-O8-Nfd"/>
-                            <constraint firstItem="ZDF-Cp-39e" firstAttribute="top" secondItem="DCJ-dO-2qV" secondAttribute="bottom" constant="40" id="EjV-Eq-UP4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Ui-5B-Cxk" secondAttribute="trailing" constant="20" id="VK5-1f-oOB"/>
-                            <constraint firstItem="5Ui-5B-Cxk" firstAttribute="top" secondItem="GMw-u1-E4u" secondAttribute="bottom" constant="20" id="bR0-Cr-BBs"/>
-                            <constraint firstItem="DCJ-dO-2qV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jCA-Ym-oJW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZDF-Cp-39e" secondAttribute="trailing" constant="20" id="kru-Ri-rpP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DCJ-dO-2qV" secondAttribute="trailing" constant="20" id="pn6-iv-eTl"/>
-                            <constraint firstItem="DCJ-dO-2qV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="t8D-lv-eQK"/>
-                            <constraint firstItem="GMw-u1-E4u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="t9j-ZZ-Xh7"/>
-                            <constraint firstItem="ZDF-Cp-39e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tbi-p6-ilb"/>
-                            <constraint firstItem="GMw-u1-E4u" firstAttribute="top" secondItem="ZDF-Cp-39e" secondAttribute="bottom" constant="40" id="xP8-bc-mHU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T68-2n-870" secondAttribute="bottom" constant="41" id="117-ek-9vg"/>
+                            <constraint firstItem="ZDF-Cp-39e" firstAttribute="leading" secondItem="T68-2n-870" secondAttribute="leading" id="WKA-SM-2OY"/>
+                            <constraint firstItem="DCJ-dO-2qV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aFb-hO-icY"/>
+                            <constraint firstItem="DCJ-dO-2qV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="b28-lV-2JT"/>
+                            <constraint firstItem="T68-2n-870" firstAttribute="top" secondItem="ZDF-Cp-39e" secondAttribute="bottom" constant="31" id="gE5-lU-zZF"/>
+                            <constraint firstItem="DCJ-dO-2qV" firstAttribute="trailing" secondItem="ZDF-Cp-39e" secondAttribute="trailing" id="gZP-Bs-sSE"/>
+                            <constraint firstItem="DCJ-dO-2qV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="gxL-Hs-luF"/>
+                            <constraint firstItem="ZDF-Cp-39e" firstAttribute="trailing" secondItem="T68-2n-870" secondAttribute="trailing" id="pLk-MT-QyY"/>
+                            <constraint firstItem="ZDF-Cp-39e" firstAttribute="top" secondItem="DCJ-dO-2qV" secondAttribute="bottom" constant="20" id="vws-HG-5Wn"/>
+                            <constraint firstItem="DCJ-dO-2qV" firstAttribute="leading" secondItem="ZDF-Cp-39e" secondAttribute="leading" id="wRT-mp-d3Q"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Todo" id="2fA-cm-nvQ"/>
+                    <navigationItem key="navigationItem" title="Todo" id="2fA-cm-nvQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="bW7-Hr-B2g">
+                            <connections>
+                                <action selector="gotoListViewClicked:" destination="BYZ-38-t0r" id="HGi-sU-s2H"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="dateTextfield" destination="GMw-u1-E4u" id="Wbm-eW-SFQ"/>
                         <outlet property="todoTextTextView" destination="ZDF-Cp-39e" id="8Ee-Cv-LO4"/>
                         <outlet property="todoTitleTextField" destination="DCJ-dO-2qV" id="C5r-vx-pI2"/>
+                        <segue destination="Acd-TW-Sn1" kind="show" identifier="toListViewVC" id="CVp-Wq-w5S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -90,6 +91,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2RB-uL-I23" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1158" y="81"/>
+        </scene>
+        <!--List View Controller-->
+        <scene sceneID="r4d-f2-Ff9">
+            <objects>
+                <viewController id="Acd-TW-Sn1" customClass="ListViewController" customModule="TodoAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BDK-pd-sHa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Fmd-JZ-2Fa">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jBm-74-DZu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jBm-74-DZu" firstAttribute="bottom" secondItem="Fmd-JZ-2Fa" secondAttribute="bottom" id="20w-fC-mjl"/>
+                            <constraint firstItem="Fmd-JZ-2Fa" firstAttribute="leading" secondItem="jBm-74-DZu" secondAttribute="leading" id="5mY-6d-XAy"/>
+                            <constraint firstItem="jBm-74-DZu" firstAttribute="trailing" secondItem="Fmd-JZ-2Fa" secondAttribute="trailing" id="P6s-uw-VBZ"/>
+                            <constraint firstItem="Fmd-JZ-2Fa" firstAttribute="top" secondItem="jBm-74-DZu" secondAttribute="top" id="pV5-37-hbb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NUv-2l-BTW"/>
+                    <connections>
+                        <outlet property="tableview" destination="Fmd-JZ-2Fa" id="pAb-5M-BbS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QMv-C6-ShB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335" y="80"/>
         </scene>
     </scenes>
     <resources>
