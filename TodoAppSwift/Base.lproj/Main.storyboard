@@ -58,6 +58,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Todo" id="2fA-cm-nvQ">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="vcg-hi-e5X"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="play" id="bW7-Hr-B2g">
                             <connections>
                                 <action selector="gotoListViewClicked:" destination="BYZ-38-t0r" id="HGi-sU-s2H"/>
